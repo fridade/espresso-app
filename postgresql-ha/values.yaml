@@ -365,15 +365,15 @@ postgresql:
   ## @param postgresql.database PostgreSQL database
   ##
   username: postgres
-  password: "TlhZJmdlcCNTWG4qNnJ1VkpMdldkekRyIVZhV3hNKkJF"
-  database: "espresso"
+  password: "NXY&gep#SXn*6ruVJLvWdzDr!VaWxM*BE"
+  database: "postgres"
   ## @param postgresql.existingSecret PostgreSQL password using existing secret
   ##
   existingSecret: ""
   ## @param postgresql.postgresPassword PostgreSQL password for the `postgres` user when `username` is not `postgres`
   ## ref: https://github.com/bitnami/containers/tree/main/bitnami/postgresql#creating-a-database-user-on-first-run (see note!)
   ##
-  postgresPassword: "TlhZJmdlcCNTWG4qNnJ1VkpMdldkekRyIVZhV3hNKkJF"
+  postgresPassword: ""
   ## @param postgresql.usePasswordFile Set to `true` to mount PostgreSQL secret as a file instead of passing environment variable
   ##
   usePasswordFile: ""
