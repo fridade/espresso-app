@@ -561,7 +561,7 @@ auth: false
 authKey: auth
 
 persistentVolume:
-  enabled: true
+  enabled: false
   ## redis-ha data Persistent Volume Storage Class
   ## If defined, storageClassName: <storageClass>
   ## If set to "-", storageClassName: "", which disables dynamic provisioning
@@ -569,10 +569,10 @@ persistentVolume:
   ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
   ##   GKE, AWS & OpenStack)
   ##
-  storageClass: "do-block-storage"
+  storageClass: "opk-sc"
   accessModes:
     - ReadWriteOnce
-  size: 1Gi
+  size: 10Gi
   annotations: {}
   labels: {}
 init:
@@ -583,7 +583,7 @@ init:
 # Warning: this might overwrite existing folders on the host system!
 hostPath:
   ## path is evaluated as template so placeholders are replaced
-  # path: "/data/{{ .Release.Name }}"
+  ## path: "/data/{{ .Release.Name }}"
 
   # if chown is true, an init-container with root permissions is launched to
   # change the owner of the hostPath folder to the user defined in the

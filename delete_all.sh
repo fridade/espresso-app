@@ -10,4 +10,7 @@ kubectl  delete pvc data-postgresql-ha-postgresql-0     \
             data-redis-ha-server-1  \
             data-redis-ha-server-2  -n s4
 
+kubectl delete pv --all
+kubectl delete pvc --all
+
 kubectl get all 
