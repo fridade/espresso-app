@@ -8,9 +8,6 @@ kubectl  delete pvc data-postgresql-ha-postgresql-0     \
             data-postgresql-ha-postgresql-2     \
             data-redis-ha-server-0  \
             data-redis-ha-server-1  \
-            data-redis-ha-server-2  -n s4
-
-kubectl delete pv --all
-kubectl delete pvc --all
+            data-redis-ha-server-2
 
 kubectl get all 
