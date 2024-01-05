@@ -329,7 +329,7 @@ sentinel:
   ## Configures sentinel with AUTH (requirepass params)
   auth: false
 
-  # password: "bGuNQc-2VX8ZV99?kHy84UpsEUjzX^yP%zj"
+  password: "bGuNQc-2VX8ZV99?kHy84UpsEUjzX^yP%zj"
 
   ## Use existing secret containing key `authKey` (ignores sentinel.password)
   # existingSecret: sentinel-secret
@@ -572,7 +572,7 @@ persistentVolume:
   storageClass: "opk-sc"
   accessModes:
     - ReadWriteOnce
-  size: 10Gi
+  size: 2Gi
   annotations: {}
   labels: {}
 init:

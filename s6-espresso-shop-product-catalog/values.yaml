@@ -100,5 +100,5 @@ strategy:
 
 postgres:
   username: "postgres"
-  password: "TlhZJmdlcCNTWG4qNnJ1VkpMdldkekRyIVZhV3hNKkJF"
+  password: "b3BrLXBvc3RyZXNxbC1wYXNz"
   database: "espresso"  
