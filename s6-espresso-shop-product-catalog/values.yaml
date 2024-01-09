@@ -99,6 +99,6 @@ strategy:
     maxUnavailable: 1  
 
 postgres:
-  username: "postgres"
+  username: "cG9zdGdyZXM="
   password: "b3BrLXBvc3RyZXNxbC1wYXNz"
-  database: "espresso"  
+  database: "ZXNwcmVzc28="  

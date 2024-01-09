@@ -36,7 +36,7 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           envFrom:
           - secretRef:
-              name: {{ .Values.app_name }} 
+              name: {{ .Values.app_name }}-secret
           env:
            - name: {{ .Values.connection.productKey }}
              value: {{ .Values.connection.productionValue }}

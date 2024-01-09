@@ -42,7 +42,7 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           envFrom:
           - secretRef:
-              name: {{ .Values.app_name }} 
+              name: {{ .Values.app_name }}-secret
           ports:
             - name: http
               containerPort: {{ .Values.service.targetPort }}
